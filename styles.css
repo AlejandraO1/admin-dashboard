@@ -1,6 +1,23 @@
+:root {
+  --main-color: #fffafa;
+  --secondary-color: #ffe0e0;
+  --tertiary-color: #ffc0d0;
+  --accent-color: #efdfbf;
+}
+
+body {
+  margin: 0;
+}
+
 .main-grid {
   display: grid;
   grid-template: auto 4fr/1fr 4fr;
+  background-color: var(--secondary-color);
+}
+
+.left-side {
+  background-color: var(--tertiary-color);
+  color: var(--main-color);
 }
 
 .header {
@@ -26,6 +43,8 @@
 .content {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  background-color: var(--main-color);
 }
 
 .projects {
@@ -37,6 +56,10 @@
 .projects-title {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.projects-content {
+  border: 1px solid var(--main-color);
 }
 
 .announce-trend {
