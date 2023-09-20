@@ -1,0 +1,45 @@
+.main-grid {
+  display: grid;
+  grid-template: auto 4fr/1fr 4fr;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.search-notification {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.admin-username {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+}
+
+.projects-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.announce-trend {
+  display: grid;
+  grid-template-rows: repeat(2, 2fr);
+}
