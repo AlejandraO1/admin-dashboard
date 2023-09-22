@@ -26,22 +26,43 @@ body {
 
 .header {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-area: 1/2/2/-1;
+  grid-template: auto 1fr/2fr 1fr;
+  padding: 0.5rem 2rem;
 }
 
-.search-notification {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+.search-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user-notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .admin-username {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
 }
 
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.buttons button {
+  background-color: var(--tertiary-color);
+  color: var(--main-color);
+  border-radius: 20px;
+  border: none;
+  width: 5rem;
+  height: 2rem;
+  font-weight: 700;
 }
 
 /* Content */
@@ -111,6 +132,19 @@ body {
   border-bottom: 1px solid var(--tertiary-color);
 }
 
+.announcement h5 {
+  font-size: 1rem;
+}
+
+.announcement p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
 .announcement:last-child {
   border-bottom: none;
+}
+
+.trend-content h5 {
+  font-size: 1rem;
 }
