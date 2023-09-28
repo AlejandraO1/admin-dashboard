@@ -85,6 +85,30 @@ body {
 
 .admin-username {
   display: grid;
+  grid-template: 1fr 1fr / auto 1fr;
+  gap: 0rem 1rem;
+}
+
+.admin-username p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 700;
+}
+
+.user-greeting {
+  align-self: flex-end;
+}
+
+.main-username {
+  font-size: 1.5rem;
+}
+
+.big-user-img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  grid-row: 1/3;
 }
 
 .buttons {
@@ -102,12 +126,6 @@ body {
   width: 5rem;
   height: 2rem;
   font-weight: 700;
-}
-
-.big-user-img {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
 }
 
 .small-user-img {
