@@ -104,6 +104,18 @@ body {
   font-weight: 700;
 }
 
+.big-user-img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.small-user-img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
 /* Content */
 
 .content {
@@ -197,4 +209,10 @@ body {
 
 .trend-content h5 {
   font-size: 1rem;
+}
+
+.trend-img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
 }
