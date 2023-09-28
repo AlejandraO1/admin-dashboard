@@ -7,6 +7,14 @@
 
 body {
   margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
 }
 
 .main-grid {
@@ -183,6 +191,7 @@ body {
 
 .projects-text p {
   opacity: 0.7;
+  font-size: 0.9rem;
 }
 
 .projects-action {
@@ -200,8 +209,7 @@ body {
 
 .announce-trend {
   display: grid;
-  grid-template-rows: repeat(2, 2fr);
-  gap: 1rem;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .announce-content,
@@ -217,11 +225,12 @@ body {
 
 .announcement h5 {
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .announcement p {
   opacity: 0.7;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .announcement:last-child {
@@ -251,6 +260,7 @@ body {
 .trend-title {
   margin: 0;
   opacity: 0.7;
+  font-size: 0.75rem;
 }
 
 .trend-img {
