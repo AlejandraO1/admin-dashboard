@@ -3,11 +3,13 @@
   --secondary-color: #eaf6f6;
   --tertiary-color: #f76b8a;
   --accent-color: #66bfbf;
+  --shadow: 0 0 50px #ccc;
 }
 
 body {
   margin: 0;
   font-family: "Playfair Display", serif;
+  cursor: default;
 }
 
 h1,
@@ -29,6 +31,17 @@ h4 {
   background-color: var(--tertiary-color);
   color: var(--main-color);
   padding: 1rem;
+}
+
+.left-side img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.left-side h1 {
+  margin: 0;
+  float: right;
 }
 
 .links {
@@ -191,6 +204,7 @@ h4 {
   padding: 1.5rem;
   background-color: var(--main-color);
   display: grid;
+  box-shadow: var(--shadow);
 }
 
 .projects-text p {
@@ -221,6 +235,7 @@ h4 {
   background-color: var(--main-color);
   padding: 1rem 2rem;
   border-radius: 12px;
+  box-shadow: var(--shadow);
 }
 
 .announcement {
